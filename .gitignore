@@ -1,0 +1,66 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.idea/
+.vscode/
+.melos_tool/
+
+# Dependency override
+pubspec.lock
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks
+ios/Pods
+ios/Podfile.lock
+ios/Runner.xcworkspace
+
+# macOS
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+macos/.symlinks
+macos/Pods
+macos/Podfile.lock
+
+# Android
+android/.gradle/
+android/captures/
+android/.idea/
+android/local.properties
+
+# Web
+.web/
+
+# Linux
+linux/flutter/
+linux/.dart_tool/
+linux/CMakeFiles/
+linux/CMakeCache.txt
+linux/Makefile
+linux/cmake-build-debug/
+linux/cmake-build-release/
+
+# Windows
+windows/flutter/
+windows/.dart_tool/
+windows/CMakeFiles/
+windows/CMakeCache.txt
+windows/Makefile
+windows/cmake-build-debug/
+windows/cmake-build-release/
+
+# IntelliJ / VS Code
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Others
+*.log
+*.tmp
+*.swp
+.DS_Store
