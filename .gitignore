@@ -1,0 +1,51 @@
+cat > .gitignore <<EOF
+# Flutter
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+.metadata
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Dependency override
+.pub-cache/
+
+# OS
+.DS_Store
+
+# iOS
+ios/Flutter/
+ios/Pods/
+ios/.symlinks/
+ios/Runner.xcworkspace/
+ios/Podfile.lock
+
+# Android
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# macOS
+macos/Flutter/
+macos/Pods/
+macos/.symlinks/
+macos/Runner.xcworkspace/
+macos/Podfile.lock
+
+# Web
+.web/
+
+# Linux
+linux/flutter/
+
+# Windows
+windows/flutter/
+EOF
