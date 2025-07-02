@@ -49,3 +49,13 @@ linux/flutter/
 # Windows
 windows/flutter/
 EOF
+
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# dotenv file
+.env
