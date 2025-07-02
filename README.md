@@ -1,16 +1,35 @@
-# fashion_app
+# bodeco 
 
-A new Flutter project.
+An application that helps users explore the sustainability of fashion products. Users can search for clothing items and receive sustainability scores based on the material composition. 
 
-## Getting Started
+## Project Structure 
 
-This project is a starting point for a Flutter application.
+``` 
+bodeco/
+├── backend/
+│   ├── main.py
+│   ├── search.py
+│   ├── scrape.py
+│   ├── requirements.txt
+│   └── .env
+│
+├── frontend/
+│   ├── android/
+│   ├── build/
+│   ├── ios/
+│   ├── lib/
+│   │   ├── main.dart
+│   │   └── api_service.dart
+│   ├── linux/
+│   ├── macos/
+│   ├── test/
+│   ├── web/
+│   ├── windows/
+│   ├── pubspec.yaml
+│   ├── pubspec.lock
+│   ├── .gitignore
+│   └── analysis_options.yaml
+│
+├── README.md 
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
