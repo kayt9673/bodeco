@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "482456226695",
+    "project_id": "bodeco-4232a",
+    "storage_bucket": "bodeco-4232a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482456226695:android:a93c66de940d49ad7ce122",
+        "android_client_info": {
+          "package_name": "com.example.fashion_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482456226695-6p71kdduaku1oeukg0tf11kpnp8dkl1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIPNccdE-vD_EFAqJu_JG8LGUDz0f_a1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482456226695-6p71kdduaku1oeukg0tf11kpnp8dkl1f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "482456226695-esoqs0i9t56an7nmgs0i9iuje1drgnd3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fashionApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
