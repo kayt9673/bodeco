@@ -1,3 +1,49 @@
 [
-
+  {
+    "url": "https://us.brandymelville.com/products/robyn-top",
+    "materials": [{ "percentage": "100%", "material": "cotton" }],
+    "brand": "Brandy Melville",
+    "price": "23.00",
+    "item_name": "Brandy Melville Usa-Robyn Top"
+  },
+  {
+    "url": "https://us.brandymelville.com/products/zelly-striped-top-8",
+    "materials": [{ "percentage": "100%", "material": "cottonmeasurements" }],
+    "brand": "Brandy Melville",
+    "price": "22.00",
+    "item_name": "Brandy Melville Usa-Zelly Striped Top"
+  },
+  {
+    "url": "https://www.abercrombie.com/shop/us/p/off-the-shoulder-twist-top-59070820?seq=04&source=googleshopping&cmp=PLA%3AEVG%3A20%3AA%3AD%3AUS%3AX%3AGGL%3AX%3ASHOP%3AX%3AX%3AX%3AX%3AX%3Ax%3AA%26F+Adults_Google_Shopping_PLA_US_Tops_All+products_PRODUCT_GROUP&gclsrc=aw.ds&gad_source=1&gad_campaignid=17296424375&gbraid=0AAAAADeAqWPNI36FsJZSLmdu2SCogRkZZ&gclid=Cj0KCQjwyvfDBhDYARIsAItzbZHvPmL-4p5UN73UAaF8xDZ00aLyIyL5YOSjql8zHcTuGxN35s36V0oaApyVEALw_wcB",
+    "materials": [
+      { "percentage": "46%", "material": "cotton" },
+      { "percentage": "46%", "material": "modal" },
+      { "percentage": "8%", "material": "elastane" }
+    ],
+    "brand": "abercrombie",
+    "price": "40,",
+    "item_name": "Women's Off-The-Shoulder Twist Top | Women's Tops | Abercrombie.com"
+  },
+  {
+    "url": "https://www.hollisterco.com/shop/us/p/soft-stretch-seamless-fabric-crew-baby-tee-59799819?categoryId=166318&faceout=model&seq=02",
+    "materials": [
+      { "percentage": "88%", "material": "polyester" },
+      { "percentage": "12%", "material": "elastane" }
+    ],
+    "brand": "hollisterco",
+    "price": "17.95",
+    "item_name": "Women's Soft Stretch Seamless Fabric Crew Baby Tee | Women's Tops | HollisterCo.com"
+  },
+  {
+    "url": "https://www.hollisterco.com/shop/us/p/easy-satin-tie-babydoll-top-59791819?categoryId=625001100&faceout=model&seq=03&afsource=social+proofing",
+    "materials": [
+      { "percentage": "100%", "material": "viscose" },
+      { "percentage": "76%", "material": "polyester" },
+      { "percentage": "24%", "material": "elastane" },
+      { "percentage": "100%", "material": "polyester" }
+    ],
+    "brand": "hollisterco",
+    "price": "29.95",
+    "item_name": "Women's Easy Satin Tie Babydoll Top | Women's Tops | HollisterCo.com"
+  }
 ]
