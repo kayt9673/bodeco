@@ -6,8 +6,6 @@ from search import search_google
 from fastapi import Query
 
 
-
-
 app = FastAPI()
 
 class ScoreRequest(BaseModel):
