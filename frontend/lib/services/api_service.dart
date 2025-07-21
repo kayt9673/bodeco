@@ -2,7 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = 'http://100.110.170.151:8000';
+  static const String baseUrl = 'http://192.168.8.219:8000';
+
 
   static Future<List<dynamic>> searchGoogle(String query) async {
     final url = Uri.parse('$baseUrl/search?query=$query');

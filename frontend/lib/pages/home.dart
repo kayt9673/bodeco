@@ -1,3 +1,4 @@
+import 'package:fashion_app/pages/specific_item.dart';
 import 'package:flutter/material.dart';
 import '../app_colors.dart';
 import '../components/search_bar.dart';
@@ -61,64 +62,55 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   final item = searchResults[index];
 
-                  return Container(
-                    margin: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(16), // 👈 rounded corners
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(16), // 👈 apply to image
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // Image (cropped and fills width)
-                          if (item['image'] != null)
-                            Image.network(
-                              item['image'],
-                              width: double.infinity,
-                              height: 120,
-                              fit: BoxFit.cover,
-                            )
-                          else
-                            Container(
-                              width: double.infinity,
-                              height: 120,
-                              color: Colors.grey[300],
-                              child: const Icon(Icons.image_not_supported),
+                  return GestureDetector(
+                    onTap: () {
+                      print(item['title']);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SpecificItemPage(item: item),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (item['image'] != null)
+                              Image.network(
+                                item['image'],
+                                width: double.infinity,
+                                height: 120,
+                                fit: BoxFit.cover,
+                              )
+                            else
+                              Container(
+                                width: double.infinity,
+                                height: 120,
+                                color: Colors.grey[300],
+                                child: const Icon(Icons.image_not_supported),
+                              ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                item['title'] ?? 'No Title',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                              ),
                             ),
-                          // Title below image
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              item['title'] ?? 'No Title',
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   );
-
-/*
-                  final item = searchResults[index];
-                  return ListTile(
-                    leading: item['image'] != null
-                        ? Image.network(
-                            item['image'],
-                            width: 50,
-                            height: 50,
-                            fit: BoxFit.cover,
-                          )
-                        : const Icon(Icons.image_not_supported),
-                    title: Text(item['title'] ?? 'No Title'),
-                    subtitle: Text(item['link'] ?? 'No Link'),
-                    onTap: () {
-                      // Optional: Handle tap to open link
-                    },
-                  ); */
                 },
               )
             )
