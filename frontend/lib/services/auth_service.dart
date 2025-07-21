@@ -1,13 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import '../../pages/navigation.dart';
-import '../../pages/onboarding.dart';
+import '../pages/navigation.dart';
+import '../pages/onboarding.dart';
 
 class AuthService {
   
   Future<void> signInWithGoogle(BuildContext context) async {
-
     final user = await GoogleSignIn().signIn();
     GoogleSignInAuthentication userAuth = await user!.authentication;
     var credential = GoogleAuthProvider.credential(idToken: userAuth.idToken, accessToken: userAuth.accessToken);
@@ -30,7 +29,7 @@ class AuthService {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (_) => OnboardingPage()),
-        (route) => false, // remove all previous routes
+        (route) => false,
       );
     }
   }

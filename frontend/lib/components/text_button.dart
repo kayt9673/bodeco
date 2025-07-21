@@ -15,7 +15,7 @@ class CustomTextButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.backgroundColor = AppColors.color1,
-    this.textColor = AppColors.color3,
+    this.textColor = AppColors.color4,
     this.fontSize = 20,
     this.borderRadius = 12,
     this.padding = const EdgeInsets.symmetric(vertical: 12, horizontal: 24),

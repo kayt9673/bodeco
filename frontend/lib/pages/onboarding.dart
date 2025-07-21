@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../app_colors.dart';
-import '../services/auth/auth_service.dart';
+import '../services/auth_service.dart';
 import '../components/step_indicator.dart';
 
 

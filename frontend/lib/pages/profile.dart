@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../app_colors.dart';
-import '../services/auth/auth_service.dart';
+import '../services/auth_service.dart';
 import '../components/text_button.dart';
 import '../components/popup.dart';
 
@@ -50,9 +50,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   CircleAvatar(
                     radius: 50,
                     backgroundImage: NetworkImage(user.photoURL ?? ''),
-
                   ),
-                  
                 ],
               )
             ),
@@ -116,8 +114,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     )
                   );
                 }
-              )
-            ),
+              ),
+            )
           ],
         )
       )

@@ -7,12 +7,15 @@ class CustomSearchBar extends StatelessWidget {
   final ValueChanged<String>? onChanged;
   final VoidCallback? onTap;
   final String hintText;
+  final ValueChanged<String>? onSubmitted;
+
 
   const CustomSearchBar({
     super.key,
     required this.controller,
     this.onChanged,
     this.onTap,
+    this.onSubmitted,
     this.hintText = 'Search',
   });
 
@@ -32,10 +35,7 @@ class CustomSearchBar extends StatelessWidget {
               controller: controller,
               onChanged: onChanged,
               onTap: onTap,
-              onSubmitted: (value) {
-                // 👇 put your logic here
-                
-              },
+              onSubmitted: onSubmitted,
               style: const TextStyle(fontSize: 14),
               decoration: InputDecoration(
                 icon: const Icon(Icons.search),
