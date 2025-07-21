@@ -12,6 +12,8 @@ class ApiService {
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
+      print("Search failed with status: ${response.statusCode}");
+      print("Response body: ${response.body}");
       throw Exception('Search failed');
     }
   }

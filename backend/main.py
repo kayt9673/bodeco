@@ -2,11 +2,22 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import subprocess, json, os, uuid
 from sustainability import score_sustainability
+from search import search_google
+from fastapi import Query
+
+
+
 
 app = FastAPI()
 
 class ScoreRequest(BaseModel):
     link: str  # we’ll just echo this back; spider is hard‑coded
+
+@app.get("/search")
+def search(query: str = Query(..., min_length=1)):
+    results = search_google(query)
+    return results
+
 
 @app.post("/score")
 def get_sustainability_score(req: ScoreRequest):
