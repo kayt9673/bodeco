@@ -1,0 +1,86 @@
+{
+  "17.95": [
+    {
+      "item_name": "Women's Soft Stretch Seamless Fabric Crew Baby Tee | Women's Tops | HollisterCo.com",
+      "brand": "hollisterco",
+      "materials": [
+        {
+          "percentage": "88%",
+          "material": "polyester"
+        },
+        {
+          "percentage": "12%",
+          "material": "elastane"
+        }
+      ]
+    }
+  ],
+  "22.00": [
+    {
+      "item_name": "Brandy Melville Usa-Zelly Striped Top",
+      "brand": "Brandy Melville",
+      "materials": [
+        {
+          "percentage": "100%",
+          "material": "cotton"
+        }
+      ]
+    }
+  ],
+  "23.00": [
+    {
+      "item_name": "Brandy Melville Usa-Robyn Top",
+      "brand": "Brandy Melville",
+      "materials": [
+        {
+          "percentage": "100%",
+          "material": "cotton"
+        }
+      ]
+    }
+  ],
+  "29.95": [
+    {
+      "item_name": "Women's Easy Satin Tie Babydoll Top | Women's Tops | HollisterCo.com",
+      "brand": "hollisterco",
+      "materials": [
+        {
+          "percentage": "100%",
+          "material": "viscose"
+        },
+        {
+          "percentage": "76%",
+          "material": "polyester"
+        },
+        {
+          "percentage": "24%",
+          "material": "elastane"
+        },
+        {
+          "percentage": "100%",
+          "material": "polyester"
+        }
+      ]
+    }
+  ],
+  "40,": [
+    {
+      "item_name": "Women's Off-The-Shoulder Twist Top | Women's Tops | Abercrombie.com",
+      "brand": "abercrombie",
+      "materials": [
+        {
+          "percentage": "46%",
+          "material": "cotton"
+        },
+        {
+          "percentage": "46%",
+          "material": "modal"
+        },
+        {
+          "percentage": "8%",
+          "material": "elastane"
+        }
+      ]
+    }
+  ]
+}
