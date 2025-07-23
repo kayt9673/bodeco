@@ -29,8 +29,8 @@ def get_all_scores():
         materials = product.get("materials", [])
         score = score_sustainability(materials)
         results.append({
-            "url": product.get("url"),
-            "item_name": product.get("item_name"),
+            "link": product.get("url"),
+            "title": product.get("item_name"),
             "brand": product.get("brand"),
             "price": product.get("price"),
             "materials": materials,

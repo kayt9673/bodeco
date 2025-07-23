@@ -7,13 +7,14 @@ load_dotenv()
 API_KEY = os.getenv("GOOGLE_API_KEY")
 CX = os.getenv("GOOGLE_CX")
 
+
 def search_google(query):
     url = "https://www.googleapis.com/customsearch/v1"
     params = {
         "key": API_KEY,
         "cx": CX,
         "q": query,
-        "num": 5
+        "num": 10
     }
 
     print("Sending request to Google with params:", params)

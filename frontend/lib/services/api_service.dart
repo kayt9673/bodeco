@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.8.219:8000';
-
+  static const String baseUrl = 'http://10.56.2.16:8000';
 
   static Future<List<dynamic>> searchGoogle(String query) async {
     final url = Uri.parse('$baseUrl/search?query=$query');
@@ -30,6 +29,18 @@ class ApiService {
       return json.decode(response.body);
     } else {
       throw Exception('Scrape failed');
+    }
+  }
+
+  static Future<List<dynamic>> fetchScoredItems() async {
+    final url = Uri.parse('$baseUrl/score_all');
+    final response = await http.get(url);
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      return data.cast<Map<String, dynamic>>();
+    } else {
+      throw Exception('Failed to load scored items');
     }
   }
 }
